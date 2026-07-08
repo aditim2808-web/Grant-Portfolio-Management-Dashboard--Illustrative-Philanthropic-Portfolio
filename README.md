@@ -37,6 +37,16 @@ A formula-driven narrative paragraph plus key portfolio figures — designed to 
 
 The core 21-field tracker: budget, disbursement, budget variance against a time-elapsed burn-rate benchmark, timeline, reporting status, and a composite **Health Score** (0–100, synthesising status, risk level, and reporting timeliness into a single management metric).
 
+## Key Management Insights
+
+The dashboard enables programme managers to quickly identify:
+
+- Grants requiring immediate follow-up due to overdue reporting.
+- Projects under- or over-spending relative to implementation timelines.
+- High-risk grants requiring additional oversight.
+- Upcoming reporting deadlines and payment milestones.
+- Overall portfolio health through a single, interpretable management indicator. 
+
 ## Features
 
 - **Executive Summary** — auto-generated portfolio narrative and key figures
@@ -52,6 +62,43 @@ The core 21-field tracker: budget, disbursement, budget variance against a time-
 - Composite performance metric design (Health Score)
 - Dashboard and data visualisation for a non-technical, time-constrained reviewer audience
 - Structured payment and deliverable tracking consistent with funder reporting requirements
+
+## Grant Health Score Methodology
+
+To provide a quick portfolio-level assessment, each grant is assigned a **Grant Health Score (0–100)**. The score is a transparent, rule-based indicator designed to summarise operational performance rather than predict future outcomes.
+
+Each grant begins with a score of **100**, with deductions applied for implementation delays, elevated risk, and overdue reporting. Every deduction corresponds to an observable management issue, making the score easy to interpret during portfolio reviews.
+
+### Scoring Rules
+
+| Factor | Condition | Points Deducted |
+|---------|-----------|----------------:|
+| Status | Needs Attention | -10 |
+| Status | Delayed | -20 |
+| Risk | Medium | -15 |
+| Risk | High | -30 |
+| Reporting | Reporting overdue (grant not completed) | -20 |
+
+Grants that are **On Track**, **Completed**, **Low Risk**, or have **current reporting** receive no deductions for those categories.
+
+### Formula
+
+```excel
+=100
+- IF(Status="Delayed",20,IF(Status="Needs Attention",10,0))
+- IF(Risk="High",30,IF(Risk="Medium",15,0))
+- IF(AND(Status<>"Completed",ReportingDue<TODAY()),20,0)
+```
+
+### Rating Scale
+
+| Rating | Score | Interpretation |
+|---------|------:|---------------|
+| 🟢 Green | 80–100 | Performing well; no immediate management action required |
+| 🟡 Amber | 50–79 | Emerging risks or delays; monitor closely |
+| 🔴 Red | <50 | Significant implementation or reporting issues requiring intervention |
+
+> **Design Note:** The Health Score is a rule-based management index rather than a statistical model. The deduction values are heuristic and were chosen to reflect the relative operational importance of common grant management issues while ensuring that every score can be traced back to specific project conditions.
 
 ## Data & Limitations
 
