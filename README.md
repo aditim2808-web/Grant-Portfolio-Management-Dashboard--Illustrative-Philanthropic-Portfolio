@@ -18,7 +18,8 @@ This project tracks a 5-grant illustrative portfolio across the given files in t
 
 ## Dashboard
 
-<img width="1871" height="1323" alt="dashboard (1)" src="https://github.com/user-attachments/assets/2daad7a3-21a8-4efb-b80e-6b2a8a939857" />
+<img width="1459" height="1921" alt="Dashboard_Screenshot" src="https://github.com/user-attachments/assets/c2a670e7-ddc2-4a72-b42d-374fc1767c4e" />
+
 
 
 KPI cards, five charts (budget vs. disbursed, grant status, risk distribution, utilisation by grant, and a composite health score), and a live reporting calendar with 🟢/🟡/🔴 status indicators.
@@ -32,7 +33,8 @@ A formula-driven narrative paragraph plus key portfolio figures — designed to 
 
 ## Grant Tracker
 
-<img width="1754" height="1241" alt="grant_tracker" src="https://github.com/user-attachments/assets/e1b3c08d-09c6-4077-a681-a0bce4dc0b88" />
+<img width="1266" height="341" alt="Screen Shot 2026-07-08 at 10 07 09 PM" src="https://github.com/user-attachments/assets/952ab0e4-b20b-48db-aba1-9162a9f33e4f" />
+
 
 
 The core 21-field tracker: budget, disbursement, budget variance against a time-elapsed burn-rate benchmark, timeline, reporting status, and a composite **Health Score** (0–100, synthesising status, risk level, and reporting timeliness into a single management metric).
