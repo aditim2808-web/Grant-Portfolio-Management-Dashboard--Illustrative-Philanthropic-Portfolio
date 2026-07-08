@@ -39,7 +39,7 @@ The core 21-field tracker: budget, disbursement, budget variance against a time-
 
 ## Key Management Insights
 
-The dashboard enables programme managers to quickly identify:
+The dashboard enables programme managers to identify quickly:
 
 - Grants requiring immediate follow-up due to overdue reporting.
 - Projects under- or over-spending relative to implementation timelines.
@@ -92,11 +92,11 @@ Grants that are **On Track**, **Completed**, **Low Risk**, or have **current rep
 
 ### Rating Scale
 
-| Rating | Score | Interpretation |
-|---------|------:|---------------|
-| 🟢 Green | 80–100 | Performing well; no immediate management action required |
-| 🟡 Amber | 50–79 | Emerging risks or delays; monitor closely |
-| 🔴 Red | <50 | Significant implementation or reporting issues requiring intervention |
+Rating, Score, Interpretation 
+
+🟢 Green  80–100: Performing well; no immediate management action required 
+🟡 Amber 50–79:  Emerging risks or delays; monitor closely 
+🔴 Red   <50: Significant implementation or reporting issues requiring intervention 
 
 > **Design Note:** The Health Score is a rule-based management index rather than a statistical model. The deduction values are heuristic and were chosen to reflect the relative operational importance of common grant management issues while ensuring that every score can be traced back to specific project conditions.
 
