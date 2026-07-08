@@ -2,15 +2,19 @@
 
 An Excel-based grant monitoring and reporting dashboard, built as a work sample to demonstrate the budget tracking, disbursement monitoring, and portfolio reporting skills relevant to grant/programme analyst roles. Applied here to a mock India air quality grant portfolio.
 
-📄 **[Download the one-page project README (PDF)](README_onepager.pdf)** — objective, data assumptions, skills demonstrated, key insights
-📊 **[Download the full dashboard (Excel)](Grant_Portfolio_Dashboard.xlsx)**
-🖨️ **[Dashboard as a standalone PDF](Dashboard_Export.pdf)** — for a quick, no-download overview
+## Tools Used
 
+- Microsoft Excel
+- PivotTables & PivotCharts
+- Conditional Formatting
+- Data Validation
+- Excel Formulas (SUMIFS, COUNTIFS, IF, XLOOKUP, INDEX/MATCH)
+- Dashboard Design
 ---
 
 ## Overview
 
-This project tracks a 5-grant illustrative portfolio across four linked sheets: an auto-generated executive summary, a visual dashboard, a detailed grant tracker, and a finance/deliverables log. All figures update live off formulas — change a disbursement amount or a status, and the summary sentence, KPI cards, charts, and health scores all recalculate.
+This project tracks a 5-grant illustrative portfolio across the given files in the repository: an auto-generated executive summary, a visual dashboard, a detailed grant tracker, and a finance/deliverables log. All figures update live off formulas — change a disbursement amount or a status, and the summary sentence, KPI cards, charts, and health scores all recalculate.
 
 ## Dashboard
 
